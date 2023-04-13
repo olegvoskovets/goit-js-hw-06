@@ -18,8 +18,10 @@ element.classList.add("gallery-list-task03");
 
 const myElement = images.map(
   (image) =>
-    `<li class='item-task03'> <img src=${image.url} alt=${image.alt} width=350/> </li>`
+    `<li class='item-task03'>
+     <img src=${image.url} alt=${image.alt} width=350/>
+      </li>`
 );
 
-element.insertAdjacentHTML("afterbegin", myElement);
+element.insertAdjacentHTML("afterbegin", myElement.join(""));
 //console.log(myElement);
